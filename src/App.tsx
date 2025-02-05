@@ -56,7 +56,7 @@ const ImageSlot: React.FC<ImageSlotProps> = ({
             // marginBottom: "-2px",
             height: "64px",
             lineHeight: 0.89,
-            border: index === 3 ? "solid 3px #dc143c" : "solid 3px black",
+            border: index === 2 ? "solid 3px #dc143c" : "solid 3px black",
             color: "black",
           }}
         >
@@ -158,7 +158,7 @@ function App() {
             key={index}
             index={index}
             image={image}
-            label={["西", "南", "北", "東"][index]} // ラベルを表示
+            label={["北", "西", "東", "南"][index]} // ラベルを表示
             onDrop={onDrop}
           />
         ))}

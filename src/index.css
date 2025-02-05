@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -52,6 +52,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+button:disabled {
+  background-color: #888; /* 無効時の背景色 */
+  color: #ccc; /* テキスト色を薄く */
+  cursor: not-allowed; /* カーソルを無効に */
+  border-color: #ddd; /* ボーダーの色を薄く */
 }
 
 @media (prefers-color-scheme: light) {
